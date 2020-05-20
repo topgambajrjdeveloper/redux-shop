@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Open+Sans:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Nombre de tienda</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <div class="brand">
+        <button onclick="openMenu()">
+          &#9776;
+        </button>
+        <a href="index.html">Nombre de tienda</a>
+      </div>
+      <!--  <div class="header-search"> 
+        <input name="search" placeholder="Buscar productos" spellcheck="false" autocomplete="off" /> 
+      </div> -->
+      <div class="header-links">
+        <a href="signin.html"><i class="fas fa-sign-in-alt"></i></a>
+        <button onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </header>
+    <!-- cart -->
+    <!-- <aside class="cart">
+      <h3 class="">Categorías</h3>
+      <button class="" onclick="closeMenu()">x</button>
+      <div class="">
+        <li>
+          <img class="" src="./images/svg/oil.svg" alt="" />
+          <a href="/">Aceite, vinagre y sal</a>
+        </li>
+    
+      </div>
+    </aside> -->
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <h3 class="sidebar-title">Categorías</h3>
+      <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+      <div class="sidebar-link">
+        <li>
+          <img class="sidebar-svg" src="./images/svg/oil.svg" alt="" />
+          <a href="/">Aceite, vinagre y sal</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/sugar.svg" alt="" />
+          <a href="/">Azúcar, caramelos y chocolates</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/baby.svg" alt="" />
+          <a href="/">Bebe</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/alcohol.svg" alt="" />
+          <a href="/">Bodega</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/cacao.svg" alt="" />
+          <a href="/">Cacao, café e infusiones</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Carne</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Charcutería y quesos</a>
+        </li>
+
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Congelados</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Conservas, caldos y cremas</a>
+        </li>
+
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Cuidado facial y corporal</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Fisioterapia y parafarmacia</a>
+        </li>
+
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Fruta y verdura</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Huevos, leche y mantequilla</a>
+        </li>
+
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Limpieza y hogar</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Maquillaje</a>
+        </li>
+
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Mariscos y pescado</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Mascotas</a>
+        </li>
+
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Panadería y pastelería</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Pizzas y platos preparados</a>
+        </li>
+
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Postres y yogures</a>
+        </li>
+        <li>
+          <img class="sidebar-svg" src="./images/svg/meat.svg" alt="" />
+          <a href="/">Zumos</a>
+        </li>
+
+      </div>
+    </aside>
+    <!-- end sidebar -->
+    <main class="main">
+      <div class="content">
+        <div class="gallery js-flickity">
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+        </div>
+        <ul class="products">
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/d1.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$60</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              <div class="product-description">
+                <p>
+                  Some text about the jeans. Super slim and comfy lorem ipsum
+                  lorem jeansum. Lorem jeamsun denim lorem jeansum.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/d1.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">60€</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              <div class="product-description">
+                <p>
+                  Some text about the jeans. Super slim and comfy lorem ipsum
+                  lorem jeansum. Lorem jeamsun denim lorem jeansum.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/d1.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">50</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              <div class="product-description">
+                <p>
+                  Some text about the jeans. Super slim and comfy lorem ipsum
+                  lorem jeansum. Lorem jeamsun denim lorem jeansum.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/d1.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$60</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              <div class="product-description">
+                <p>
+                  Some text about the jeans. Super slim and comfy lorem ipsum
+                  lorem jeansum. Lorem jeamsun denim lorem jeansum.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/d1.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$60</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              <div class="product-description">
+                <p>
+                  Some text about the jeans. Super slim and comfy lorem ipsum
+                  lorem jeansum. Lorem jeamsun denim lorem jeansum.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/d1.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$60</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              <div class="product-description">
+                <p>
+                  Some text about the jeans. Super slim and comfy lorem ipsum
+                  lorem jeansum. Lorem jeamsun denim lorem jeansum.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      All right reserved.
+    </footer>
+    <!-- end Footer -->
+  </div>
+
+  <!-- script -->
+  <script>
+    function openMenu() {
+      document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+      document.querySelector(".sidebar").classList.remove("open")
+    }
+    function openCart() {
+      document.querySelector(".cart").classList.add("open");
+    }
+  function closedCart() {
+    document.querySelector(".cart").classList.remove("open");
+  }
+  </script>
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- end script and javascript -->
+</body>
+
+</html>
