@@ -99,7 +99,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top:19px;
+  padding-top:19px;  
 }
 
 .products li {
@@ -118,15 +118,14 @@ a:hover {
 }
 .producto p {
   margin: auto;
-  text-align: center;
   font-family: arial;
 }
 .product-name {
   font-size: 2rem;
   font-weight: bold;
-  text-align: -moz-center;
-  text-align: -webkit-center;
+  display: flex;
 }
+
 .product-brand {
   font-size: 1.2rem;
   color: #808080;
