@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Gallery from "./components/Gallery/Gallery";
+//import Gallery from "./components/Gallery/Gallery";
 import Footer from "./components/Footer/Footer";
 import ProductScreen from "./screen/ProductScreen";
 import HomeScreem from "./screen/HomeScreen";
 
 function App() {
+  //const noGallery = this.state.noGallery;
+
   return (
     <Router>
       <div className="grid-container">
@@ -21,10 +23,8 @@ function App() {
         <main className="main">
           <div className="content">
             {/*<!-- Gallery -->*/}
-            {}
-            <Gallery/>
+            {/*<Gallery />*/}
             {/*<!-- end Gallery -->*/}
-
             <Route path="/" exact={true} component={HomeScreem} />
             <Route path="/product/:id" component={ProductScreen} />
           </div>

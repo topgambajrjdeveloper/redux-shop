@@ -12,7 +12,7 @@ export default {
         "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.",
     },
     {
-      id: 2,
+      id: "2",
       category: "Fruta y verdura",
       image: "https://fakeimg.pl/300/",
       price: 2.9,
@@ -23,7 +23,7 @@ export default {
         "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.",
     },
     {
-      id: 3,
+      id: "3",
       category: "Carne",
       image: "https://fakeimg.pl/300/",
       price: 2.9,
@@ -34,7 +34,51 @@ export default {
         "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.",
     },
     {
-      id: 4,
+      id: "4",
+      category: "Congelados",
+      image: "https://fakeimg.pl/300/",
+      price: 2.9,
+      title: "Congelados",
+      rating: 4.5,
+      numReviews: 10,
+      descriptions:
+        "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.",
+    },
+    {
+      _id: "5",
+      category: "Fruta y verdura",
+      image: "https://fakeimg.pl/300/",
+      price: 2.9,
+      title: "Platanos",
+      rating: 4.5,
+      numReviews: 10,
+      descriptions:
+        "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.",
+    },
+    {
+      id: "6",
+      category: "Fruta y verdura",
+      image: "https://fakeimg.pl/300/",
+      price: 2.9,
+      title: "Verduras de la huerta",
+      rating: 4.5,
+      numReviews: 10,
+      descriptions:
+        "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.",
+    },
+    {
+      id: "7",
+      category: "Carne",
+      image: "https://i.picsum.photos/id/237/200/300.jpg",
+      price: 2.9,
+      title: "Entrecot",
+      rating: 4.5,
+      numReviews: 10,
+      descriptions:
+        "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.",
+    },
+    {
+      id: "8",
       category: "Congelados",
       image: "https://fakeimg.pl/300/",
       price: 2.9,

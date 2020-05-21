@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
-import axios from 'axios';
+
 import { listProducts } from "../redux/actions/productActions";
 
 function HomeScreem(props) {
@@ -29,13 +29,11 @@ function HomeScreem(props) {
               <img
                 className="product-image"
                 src={product.image}
-                alt={product.title}
+                alt="product"
               />
             </Link>
             <div className="product-name">
-              <Link to={"/product/" + product._id}>
-                {product.title}
-              </Link>
+              <Link to={"/product/" + product._id}>{product.title}</Link>
             </div>
             <div className="product-brand">{product.category}</div>
             <div className="product-price">{product.price}€</div>

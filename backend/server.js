@@ -26,13 +26,20 @@ app.use((req, res, next) => {
 });
 
 // Router Basic
-app.get(`/api/${API_VERSION}/products`, (req, res) => {
+app.get(`/api/${API_VERSION}/product`, (req, res) => {
   res.send(data.products);
+});
+app.get(`/api/${API_VERSION}/product/:id`, (req, res) => {
+  const productId = req.params.id;
+  const product = data.products.find(x => x._id === productId);
+  if (product)
+    res.send(product);
+  else res.status(404).send({ msg: 'Producto no encontrado' });
 });
 
 app.listen(PORT, () => {
   console.log(
-    `Servidor iniciado en http://${IP_SERVER_LOCAL}:${PORT}/api/${API_VERSION}/products`
+    `Servidor iniciado en http://${IP_SERVER_LOCAL}:${PORT}/api/${API_VERSION}/product`
   );
 });
 
